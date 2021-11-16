@@ -27,3 +27,18 @@ html {
   font-size: 10rem;
   flex-flow: column;
 }
+
+input[type=checkbox] {
+  display: none;
+}
+
+.image img {
+  margin: 100px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+}
+
+input[type=checkbox]:checked ~ label > img {
+  transform: scale(2);
+  cursor: zoom-out;
+}

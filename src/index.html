@@ -8,11 +8,36 @@
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      input[type=checkbox] {
+      display: none;
+}
+
+    .image img {
+    margin: 100px;
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+
+    input[type=checkbox]:checked ~ label > img {
+    transform: scale(2);
+    cursor: zoom-out;
+}
+
+    </style>
   </head>
   <body>
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
+      <div class="image">
+        <profile>
+          <input type="checkbox" id="zoomCheck">
+            <label for="zoomCheck">
+              <img src="images/stoyan kolev.PNG">
+            </label>
+          </profile>
+      </div>
     </div>
   </body>
 </html>
