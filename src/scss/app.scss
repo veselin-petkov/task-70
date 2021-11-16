@@ -34,8 +34,7 @@ input[type=checkbox] {
 
 .image img {
   margin: 100px;
-  transition: transform 0.25s ease;
-  cursor: zoom-in;
+  transform: scale(2);
 }
 
 input[type=checkbox]:checked ~ label > img {
